@@ -3,16 +3,23 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
-  color: white;
+  color:  #8d8888;
   margin: 0;
 }
 
-h1 #title {
+h1 {
   font-weight: 400;
   line-height: 1.2;
-  padding: 0 0.625rem;
-  margin-bottom: 1.875rem;
-  text-align: center;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 label {
@@ -32,29 +39,40 @@ textarea {
   line-height: inherit;
 }
 
+button {
+  border: none;
+}
+
+.survey-container{
+  width: 60%;
+  margin: 3.125rem auto 0 auto;
+}
+
 .header {
   padding: 0 0.625rem;
   margin-bottom: 1.875rem;
 }
 
-#description {
-  font-size: 1.125rem;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+.description {
   font-style: italic;
   font-weight: 200;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.text-center {
   text-align: center;
 }
 
+
 form {
-  background-color: darkblue;
+  background: rgba(27, 27, 50, 0.8);
   padding: 2.5rem 0.625rem;
   border-radius: 0.25rem;
+  width: 100%;
+  padding: 14px 20px;
 }
-
 .input-radio,
-#input-checkbox {
+.input-checkbox {
   display: inline-block;
   margin-right: 0.625rem;
   min-height: 1.25rem;
@@ -68,13 +86,12 @@ form {
   resize: vertical;
 }
 
-#submit-button {
+#submit {
   display: block;
   width: 100%;
   padding: 0.75rem;
-  background-color: green;
-  color: inherit;
+  background: #37af65;
+  color: white;
   border-radius: 2px;
   cursor: pointer;
-  border: none;
 }
